@@ -1,0 +1,20 @@
+{
+  "name": "viavia-nl/viavia-channels",
+  "description": "ViaVia channels",
+  "require": {
+    "viavia-nl/viavia-php-sdk": "^1.0"
+  },
+  "authors": [
+    {
+      "name": "Sander de Jonge",
+      "email": "info@viavia.cloud"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ViaVia\\Channels\\": [
+        "src/"
+      ]
+    }
+  }
+}
