@@ -2,7 +2,8 @@
   "name": "viavia-nl/viavia-channels",
   "description": "ViaVia channels",
   "require": {
-    "viavia-nl/viavia-php-sdk": "^1.0"
+    "viavia-nl/viavia-php-sdk": "^1.0",
+    "automattic/woocommerce": "^3.0"
   },
   "authors": [
     {
