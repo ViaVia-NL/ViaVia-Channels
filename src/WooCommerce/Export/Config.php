@@ -4,9 +4,8 @@ namespace ViaVia\Channels\WooCommerce\Export;
 
 class Config
 {
-	public $url;
-
-	public $consumerKey;
-
-	public $consumerSecret;
+	public function getConfigPossibilities()
+	{
+		return array('url', 'consumer_key', 'consumer_secret');
+	}
 }
