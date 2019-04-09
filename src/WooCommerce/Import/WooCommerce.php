@@ -3,6 +3,7 @@
 namespace ViaVia\Channels\WooCommerce\Import;
 
 use ViaVia\Channels\Api\Import\ImportChannelInterface;
+use ViaVia\Channels\Api\Import\ImportConfig;
 
 class WooCommerce implements ImportChannelInterface
 {
@@ -13,12 +14,15 @@ class WooCommerce implements ImportChannelInterface
 
 	public function getChannelDescription()
 	{
-		return "WooCommerce is an open-source e-commerce plugin for WordPress. It is designed for small to large-sized online merchants using WordPress.";
+		return "WooCommerce is an open-source e-commerce plugin for WordPress";
 	}
 
 	public function getConfig()
 	{
-		return new Config;
+		$config = new ImportConfig();
+		$config->addConfigPossibility(['label' => 'url', 'key' => 'url'])
+			->addConfigPossibility(['label' => 'Consumer key', 'key' => 'consumer_key', 'hint' => 'You can generate these here: WooCommerce > Settings > API > Keys/Apps'])
+			->addConfigPossibility(['label' => 'Consumer secret', 'key' => 'consumer_secret']);
 	}
 
 }
