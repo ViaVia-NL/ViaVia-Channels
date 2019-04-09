@@ -8,6 +8,7 @@ class ImportConfig
 
 	public function addConfigPossibility(array $config)
 	{
+		var_dump($config); die;
 		if(!empty($config['label']) || !empty($config['key'])) {
 			throw new \Exception('label or key index not set');
 		} else {
