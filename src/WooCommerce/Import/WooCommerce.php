@@ -52,9 +52,9 @@ class WooCommerce implements ImportChannelInterface
 	public function getAvailableProductMappings()
 	{
 		$this->client = new Client(
-			$this->importConfig->getConfigValue($this->getChannelName(), 'url'),
-			$this->importConfig->getConfigValue($this->getChannelName(), 'consumer_key'),
-			$this->importConfig->getConfigValue($this->getChannelName(), 'consumer_secret'),
+			$this->importConfig->getConfigValue($this->getChannelName(), $this->scope, 'url'),
+			$this->importConfig->getConfigValue($this->getChannelName(), $this->scope, 'consumer_key'),
+			$this->importConfig->getConfigValue($this->getChannelName(), $this->scope, 'consumer_secret'),
 			[
 				'wp_api' => true,
 				'version' => 'wc/v3'

@@ -22,17 +22,17 @@ class ImportConfig
 		return $this->configPossibilities;
 	}
 
-	public function getConfigValue($channel, $key)
+	public function getConfigValue($channel, $scope, $key)
 	{
 		$configService = new \App\Service\ChannelConfigService();
 
-		return $configService->getConfigValue($channel, $key);
+		return $configService->getConfigValue($channel, $scope, $key);
 	}
 
-	public function saveConfigValue($channel, $key, $value)
+	public function saveConfigValue($channel, $scope, $key, $value)
 	{
 		$configService = new \App\Service\ChannelConfigService();
 
-		return $configService->saveConfigValue($channel, $key, $value);
+		return $configService->saveConfigValue($channel, $scope, $key, $value);
 	}
 }
