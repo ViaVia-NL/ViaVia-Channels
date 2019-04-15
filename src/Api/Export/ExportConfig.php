@@ -21,4 +21,18 @@ class ExportConfig
 	{
 		return $this->configPossibilities;
 	}
+
+	public function getConfigValue($channel, $key)
+	{
+		$configService = new \App\Service\ChannelConfigService();
+
+		return $configService->getConfigValue($channel, $key);
+	}
+
+	public function saveConfigValue($channel, $key, $value)
+	{
+		$configService = new \App\Service\ChannelConfigService();
+
+		return $configService->saveConfigValue($channel, $key, $value);
+	}
 }

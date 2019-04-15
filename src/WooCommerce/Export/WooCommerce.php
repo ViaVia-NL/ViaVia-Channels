@@ -7,6 +7,13 @@ use ViaVia\Channels\Api\Export\ExportConfig;
 
 class WooCommerce implements ExportChannelInterface
 {
+	protected $scope;
+
+	public function __construct($scope)
+	{
+		$this->scope = $scope;
+	}
+
 	public function getChannelName()
 	{
 		return "WooCommerce";
@@ -26,4 +33,5 @@ class WooCommerce implements ExportChannelInterface
 
 		return $config;
 	}
+
 }

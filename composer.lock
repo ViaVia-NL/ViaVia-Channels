@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "725ab7aee69405052bfe865ffa46c3d0",
+    "content-hash": "bd817bd872ce087ee2be0a0f08271015",
     "packages": [
         {
             "name": "automattic/woocommerce",
@@ -329,16 +329,16 @@
         },
         {
             "name": "viavia-nl/viavia-php-sdk",
-            "version": "v1.0",
+            "version": "v1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ViaVia-NL/ViaVia-PHP-SDK.git",
-                "reference": "5ac00e55447a84c46b610023c3e756df5228e479"
+                "reference": "5f570ea80f15c43b23c3998242e0092bbac05b8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ViaVia-NL/ViaVia-PHP-SDK/zipball/5ac00e55447a84c46b610023c3e756df5228e479",
-                "reference": "5ac00e55447a84c46b610023c3e756df5228e479",
+                "url": "https://api.github.com/repos/ViaVia-NL/ViaVia-PHP-SDK/zipball/5f570ea80f15c43b23c3998242e0092bbac05b8b",
+                "reference": "5f570ea80f15c43b23c3998242e0092bbac05b8b",
                 "shasum": ""
             },
             "require": {
@@ -361,7 +361,7 @@
                 }
             ],
             "description": "ViaVia rest api sdk",
-            "time": "2019-03-04T17:13:58+00:00"
+            "time": "2019-04-15T17:04:09+00:00"
         }
     ],
     "packages-dev": [],
